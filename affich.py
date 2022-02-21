@@ -264,7 +264,7 @@ if __name__ == '__main__':
                     exit()
                 elif sys.argv[i] == "-a": ## activer anonyme avec la variable global
                     anonyme = True
-                elif sys.argv[i] == "-menu": ## active menu
+                elif (sys.argv[i] == "-menu") or (sys.argv[i] == "-m"): ## active menu
                     mainmenu()
                 elif (sys.argv[i] == "-format") or (sys.argv[i] == "-f"):
                     if (sys.argv[i+1] == "yml") or (sys.argv[i+1] == "xml") or (sys.argv[i+1] == "json"):
