@@ -1,3 +1,4 @@
+__author__ = "Liam Thomas-Chollier"
 dico = {}
 import sys
 import os
