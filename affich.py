@@ -88,7 +88,7 @@ def outtoxml(dico,path): ### creation ficher en format xml
 
 def mainmenu(): ###menu principale
     global fpath
-    code, tag = d.menu("Coisir operation:",
+    code, tag = d.menu("Choisir operation:",
                        choices=[("(1)", "Spécifier le nom du fichier à traiter"),
                                 ("(2)", "Générer un fichier anonymiser"),
                                 ("(3)", "Afficher le fichier anonymiser"),
