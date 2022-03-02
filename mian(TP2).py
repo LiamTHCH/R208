@@ -1,7 +1,5 @@
-
-from cgi import test
-from pickletools import read_uint1
-from signal import pthread_kill
+import pickle
+from unittest import TestCase
 
 
 class Patisserie:
@@ -36,3 +34,13 @@ class Patisserie:
             return Patisserie(self.__poids+__o.getPoid(),self.__categorie)
         else:
             return Patisserie(self.__poids+__o.getPoid())
+    def sauvegarder(self,chemin):
+        with open(chemin,"wb") as infile:
+            pickle.dump(self,infile)
+    def chargement(self,chemain):
+        with open(chemain, 'rb') as infile:
+            temp  = str(pickle.load(infile))
+            temp = temp.split(";")
+            self.__poids = temp[0]
+            self.__categorie = temp[1]
+
