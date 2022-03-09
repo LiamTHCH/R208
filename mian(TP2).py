@@ -1,5 +1,4 @@
 import pickle
-from unittest import TestCase
 
 
 class Patisserie:
@@ -43,4 +42,5 @@ class Patisserie:
             temp = temp.split(";")
             self.__poids = temp[0]
             self.__categorie = temp[1]
+
 
